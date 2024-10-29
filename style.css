@@ -10,13 +10,8 @@
   line-height: 1.5rem;
   background-color: rgb(254	249	223	);
   color: rgb(81, 36, 36);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  margin: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 h2 {
@@ -33,7 +28,7 @@ h2 {
 
 .container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 100%;
 }
@@ -94,6 +89,9 @@ h2 {
   padding: 20px;
   padding-left: 2rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form-section {
@@ -109,7 +107,6 @@ footer {
   color: rgb(215, 214, 214);
 }
 
-
 .textbox-input {
   font-family: inherit;
   font-size: inherit;
@@ -117,14 +114,15 @@ footer {
   border: rgb(81, 36, 36) solid 1px;
   color:  rgb(81, 36, 36);
   border-radius: 5px;
-  width: 215px;
+  width: 220px;
   background-color: rgb(253, 252, 244);
 }
 
 .checkOrderButton {
   font-family: inherit;
-  font-size: inherit;
+  font-size: 1.2rem;
   padding: 0.2rem 1rem;
+  width: 110px;
   border-radius: 5px;
   background: rgb(248	147	69	);
   color:  rgb(81,36,36);
@@ -226,7 +224,8 @@ footer {
   }
 
   #welcome-text {
-    left: 2.5rem;
+    left: 2rem;
+    font-size: 3.3rem;
   }
 
   footer {
@@ -234,7 +233,7 @@ footer {
   }
 
   .modal {
-      width: 50vw;
+      width: 80vw;
   }
 
 }

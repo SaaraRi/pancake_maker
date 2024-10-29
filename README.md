@@ -18,5 +18,5 @@ README
 - The application's design and functionality work on both desktop and mobile devices.
 
 - Built using HTML, CSS and vanilla JavaScript.
-# pancake_maker
+
 # pancake_maker
