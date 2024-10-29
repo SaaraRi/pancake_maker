@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+   <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Dekko&family=Delius&family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+   <link href="pancakefavicon.ico" rel="shortcut icon" type="image/x-icon" />
+   <title>Pancake Maker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="pexels-ryutaro-5473224.jpg" alt="Delicious pancakes">
+        <div class="img-pancakeboy">
+            <img src="pancake-character-clipart.svg" alt="Smiling cartoon character with a pancake face">
+        </div>
+        <div class="price-banner">
+            <span id="totalPrice"><strong>5 €</strong></span>
+        </div>
+        <h1 id="welcome-text">Welcome to Pancake Palace!</h1>
+      </div>
+      <div class="form-container">
+        <h2>Customize Your Pancake</h2>
+        <div class="form-section">
+          <h3 class="section-title">Choose your pancake type:</h3>
+          <select id="type" class="textbox-input" >
+            <option value="classic" data-price="5" data-name="Classic">
+              Classic - 5 €
+            </option>
+            <option value="chocolate" data-price="6" data-name="Chocolate">
+              Chocolate - 6 €
+            </option>
+            <option value="blueberry" data-price="7" data-name="Blueberry">
+              Blueberry - 7 €
+            </option>
+          </select>
+        </div>
+        <div class="form-section">
+          <h3 class="section-title">Select your toppings (1 € each):</h3>
+          <div>
+          <input type="checkbox" id="nuts" data-name="Nuts"
+          data-category="toppings" value="1"/>
+          <label for="nuts">Nuts</label>
+          </div>
+          <div>
+          <input type="checkbox" id="bananas" data-name="Bananas"
+          data-category="toppings" value="1"/>
+          <label for="bananas">Bananas</label>
+          </div>
+          <div>
+          <input type="checkbox" id="strawberries" data-name="Strawberries" data-category="toppings" value="1"/>
+          <label for="strawberries">Strawberries</label>
+          </div>
+          <div>
+          <input type="checkbox" id="syrup" data-name="Syrup"
+          data-category="toppings" value="1"/>
+          <label for="syrup">Syrup</label>
+          </div>
+        </div>
+        <div class="form-section">
+          <h3 class="section-title">Add extras:</h3>
+          <div>
+          <input type="checkbox" id="whippedCream" data-name="Whipped Cream"
+          data-category="extras" value="2"/>
+          <label for="whippedCream">Whipped Cream - 2 €</label>
+          </div>
+          <div>
+          <input type="checkbox" id="iceCream" data-name="Ice Cream"
+          data-category="extras" value="3"/>
+          <label for="iceCream">Ice Cream - 3 €</label>
+          </div>
+        </div>
+        <div class="form-section">
+          <h3 class="section-title">Choose your delivery option:</h3>
+          <div>
+          <input type="radio" name="deliverytype" id="eatIn" value="0" data-name="Eat in" checked>
+          <label for="eatIn">Eat in (No charge)</label>
+          </div>
+          <div>
+          <input type="radio" name="deliverytype" id="pickUp" value="0" data-name="Pick-up">
+          <label for="pickUp">Pick-up (No charge)</label>
+          </div>
+          <div>
+          <input type="radio" name="deliverytype" id="delivery" value="5" data-name="Delivery">
+          <label for="delivery">Delivery (+5 €)</label>
+          </div>
+        </div>
+        <div class="form-section"> 
+            <h3 class="section-title">Name:</h3>
+            <input type="text" id="customerName" class="textbox-input" placeholder="Enter your name" default="Guest">
+        </div>
+        <button class="checkOrderButton">Check Order</button>
+        <div class="order-summary overlay" id="overlay">
+        <div class="modal">
+          <button class="closeButton">x</button>
+          <h3 class="section-title">Order details:</h3>
+          <div class="nameSummary">
+          <p><strong>Customer name: </strong><span id="orderCustomerName"></span></p>
+          </div>
+          <p><strong>Pancake type:   </strong><span id="orderPancakeType"></span></p>
+          <p><strong>Toppings: </strong><span id="orderToppings"></span></p>
+          <p><strong>Extras: </strong><span id="orderExtras"></span></p>
+          <p><strong>Delivery method: </strong><span id="orderDelivery"></span></p>
+          <div class="priceSummary">
+          <p><strong>Total price: </strong><span id="orderTotalPrice"></span></p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Copyright &copy REACT24S/Saara R.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
